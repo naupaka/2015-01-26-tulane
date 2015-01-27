@@ -1,6 +1,5 @@
-% Slides for WK-10 ``Data Visualization Using R''
-% Ecological Society of America meeting
-% August 2014 - Sacramento, CA
+% Slides for Software Carpentry workshop at Tulane
+% January 2015 - New Orleans, LA
 %
 % Original slides by: Karthik Ram, karthik.ram@gmail.com
 % Modified by: Naupaka Zimmerman, naupaka@gmail.com
@@ -57,7 +56,7 @@ require(plyr)
 @ 
 \title{Data Visualization Using R \& ggplot2}
 \author{Naupaka Zimmerman (@naupakaz) \linebreak Andrew Tredennick (@ATredennick) \linebreak \linebreak Hat tip to Karthik Ram (@\_inundata) for original slides \linebreak}
-\date{August 10, 2014}
+\date{January 27, 2015}
 \maketitle
 
 % --------------------------------------------------------------
@@ -70,15 +69,6 @@ install.packages("ggplot2", dependencies = TRUE)
 install.packages("plyr")
 install.packages("ggthemes")
 install.packages("reshape2")
-# for some of the examples towards the end:
-install.packages("gridExtra")
-install.packages("devtools")
-# Then a few packages to acquire data from the web to visualize
-install.packages("rfisheries")
-install.packages("rgbif")
-install.packages("taxize")
-# optional
-install_github("rWBclimate", "ropensci")
 @
 \end{frame}
 
@@ -992,7 +982,7 @@ library(ggthemes)
 # install.packages('wesanderson')
 library("wesanderson")
 # display a palette
-display.wes.palette(4, "Royal1")
+wes_palette("Royal2", 5)
 @
 \end{center}
 \end{frame}

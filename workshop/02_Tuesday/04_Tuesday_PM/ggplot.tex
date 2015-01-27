@@ -1,6 +1,5 @@
-% Slides for WK-10 ``Data Visualization Using R''
-% Ecological Society of America meeting
-% August 2014 - Sacramento, CA
+% Slides for Software Carpentry workshop at Tulane
+% January 2015 - New Orleans, LA
 %
 % Original slides by: Karthik Ram, karthik.ram@gmail.com
 % Modified by: Naupaka Zimmerman, naupaka@gmail.com
@@ -93,7 +92,7 @@
 
 \title{Data Visualization Using R \& ggplot2}
 \author{Naupaka Zimmerman (@naupakaz) \linebreak Andrew Tredennick (@ATredennick) \linebreak \linebreak Hat tip to Karthik Ram (@\_inundata) for original slides \linebreak}
-\date{August 10, 2014}
+\date{January 27, 2015}
 \maketitle
 
 % --------------------------------------------------------------
@@ -108,15 +107,6 @@ Install some packages
 \hlkwd{install.packages}\hlstd{(}\hlstr{"plyr"}\hlstd{)}
 \hlkwd{install.packages}\hlstd{(}\hlstr{"ggthemes"}\hlstd{)}
 \hlkwd{install.packages}\hlstd{(}\hlstr{"reshape2"}\hlstd{)}
-\hlcom{# for some of the examples towards the end:}
-\hlkwd{install.packages}\hlstd{(}\hlstr{"gridExtra"}\hlstd{)}
-\hlkwd{install.packages}\hlstd{(}\hlstr{"devtools"}\hlstd{)}
-\hlcom{# Then a few packages to acquire data from the web to visualize}
-\hlkwd{install.packages}\hlstd{(}\hlstr{"rfisheries"}\hlstd{)}
-\hlkwd{install.packages}\hlstd{(}\hlstr{"rgbif"}\hlstd{)}
-\hlkwd{install.packages}\hlstd{(}\hlstr{"taxize"}\hlstd{)}
-\hlcom{# optional}
-\hlkwd{install_github}\hlstd{(}\hlstr{"rWBclimate"}\hlstd{,} \hlstr{"ropensci"}\hlstd{)}
 \end{alltt}
 \end{kframe}
 \end{knitrout}
@@ -469,7 +459,7 @@ These two packages are the swiss army knives of \texttt{R}.
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/first_plot_} 
+{\centering \includegraphics[width=.75\linewidth]{figure/first_plot_-1} 
 
 }
 
@@ -490,7 +480,7 @@ These two packages are the swiss army knives of \texttt{R}.
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/first_plot_size_} 
+{\centering \includegraphics[width=.75\linewidth]{figure/first_plot_size_-1} 
 
 }
 
@@ -511,7 +501,7 @@ These two packages are the swiss army knives of \texttt{R}.
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/first_plot_color_} 
+{\centering \includegraphics[width=.75\linewidth]{figure/first_plot_color_-1} 
 
 }
 
@@ -533,7 +523,7 @@ These two packages are the swiss army knives of \texttt{R}.
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/first_plot_shape_} 
+{\centering \includegraphics[width=.75\linewidth]{figure/first_plot_shape_-1} 
 
 }
 
@@ -559,7 +549,7 @@ Then generate this plot below.
 \begin{knitrout}\footnotesize
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/ex1} 
+{\centering \includegraphics[width=.75\linewidth]{figure/ex1-1} 
 
 }
 
@@ -614,7 +604,7 @@ See \texttt{?geom\_boxplot} for list of options
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/boxplots1_} 
+{\centering \includegraphics[width=.75\linewidth]{figure/boxplots1_-1} 
 
 }
 
@@ -694,7 +684,7 @@ See \texttt{?geom\_boxplot} for list of options
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/facetgrid1} 
+{\centering \includegraphics[width=.75\linewidth]{figure/facetgrid1-1} 
 
 }
 
@@ -716,7 +706,7 @@ See \texttt{?geom\_boxplot} for list of options
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/facet_grid2} 
+{\centering \includegraphics[width=.75\linewidth]{figure/facet_grid2-1} 
 
 }
 
@@ -738,7 +728,7 @@ See \texttt{?geom\_boxplot} for list of options
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/facet_wrap} 
+{\centering \includegraphics[width=.75\linewidth]{figure/facet_wrap-1} 
 
 }
 
@@ -830,7 +820,7 @@ See \texttt{?geom\_boxplot} for list of options
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/barcolors} 
+{\centering \includegraphics[width=.75\linewidth]{figure/barcolors-1} 
 
 }
 
@@ -853,7 +843,7 @@ See \texttt{?geom\_boxplot} for list of options
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/facetgridcolors} 
+{\centering \includegraphics[width=.75\linewidth]{figure/facetgridcolors-1} 
 
 }
 
@@ -889,7 +879,7 @@ See \texttt{?geom\_boxplot} for list of options
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/boxplots3} 
+{\centering \includegraphics[width=.75\linewidth]{figure/boxplots3-1} 
 
 }
 
@@ -975,7 +965,7 @@ See \texttt{?geom\_histogram} for list of options
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/histogr} 
+{\centering \includegraphics[width=.75\linewidth]{figure/histogr-1} 
 
 }
 
@@ -996,7 +986,7 @@ See \texttt{?geom\_histogram} for list of options
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/histogra} 
+{\centering \includegraphics[width=.75\linewidth]{figure/histogra-1} 
 
 }
 
@@ -1019,17 +1009,18 @@ See \texttt{?geom\_histogram} for list of options
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlstd{climate} \hlkwb{<-} \hlkwd{read.csv}\hlstd{(}\hlstr{"../data/climate.csv"}\hlstd{,} \hlkwc{header} \hlstd{= T)}
+\end{alltt}
+
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '../data/climate.csv': No such file or directory}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}\begin{alltt}
 \hlkwd{ggplot}\hlstd{(climate,} \hlkwd{aes}\hlstd{(Year, Anomaly10y))} \hlopt{+}
     \hlkwd{geom_line}\hlstd{()}
 \end{alltt}
-\end{kframe}
-
-{\centering \includegraphics[width=.75\linewidth]{figure/linea_} 
-
-}
 
 
-
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in ggplot(climate, aes(Year, Anomaly10y)): object 'climate' not found}}\end{kframe}
 \end{knitrout}
 \begin{flushright}
 \begingroup
@@ -1055,14 +1046,9 @@ We can also plot confidence regions
         \hlkwc{fill} \hlstd{=} \hlstr{"blue"}\hlstd{,} \hlkwc{alpha} \hlstd{=} \hlnum{.1}\hlstd{)} \hlopt{+}
     \hlkwd{geom_line}\hlstd{(}\hlkwc{color} \hlstd{=} \hlstr{"steelblue"}\hlstd{)}
 \end{alltt}
-\end{kframe}
-
-{\centering \includegraphics[width=.75\linewidth]{figure/lineb} 
-
-}
 
 
-
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in ggplot(climate, aes(Year, Anomaly10y)): object 'climate' not found}}\end{kframe}
 \end{knitrout}
 \end{frame}
 
@@ -1073,14 +1059,18 @@ We can also plot confidence regions
 \begin{itemize}
 \item Modify the previous plot and change it such that there are three lines instead of one with a confidence band.
 \begin{knitrout}\footnotesize
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-
-{\centering \includegraphics[width=.75\linewidth]{figure/ex2} 
-
-}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 
 
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in ggplot(climate, aes(Year, Anomaly10y)): object 'climate' not found}}
 
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): object 'cplot' not found}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): object 'cplot' not found}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): object 'cplot' not found}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): object 'cplot' not found}}\end{kframe}
 \end{knitrout}
 
 \end{itemize}
@@ -1104,7 +1094,7 @@ We can also plot confidence regions
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/barone} 
+{\centering \includegraphics[width=.75\linewidth]{figure/barone-1} 
 
 }
 
@@ -1125,7 +1115,7 @@ We can also plot confidence regions
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/bartwo} 
+{\centering \includegraphics[width=.75\linewidth]{figure/bartwo-1} 
 
 }
 
@@ -1146,7 +1136,7 @@ We can also plot confidence regions
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/barthree} 
+{\centering \includegraphics[width=.75\linewidth]{figure/barthree-1} 
 
 }
 
@@ -1167,7 +1157,7 @@ What's going on with the y axis?
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/barthree2} 
+{\centering \includegraphics[width=.75\linewidth]{figure/barthree2-1} 
 
 }
 
@@ -1184,7 +1174,7 @@ Using the d2 dataset you created earlier, generate this plot below. Take a quick
 \begin{knitrout}\footnotesize
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/ex3} 
+{\centering \includegraphics[width=.75\linewidth]{figure/ex3-1} 
 
 }
 
@@ -1201,14 +1191,14 @@ Using the d2 dataset you created earlier, generate this plot below. Take a quick
 \item Using the climate dataset, create a new variable called sign. Make it logical (true/false) based on the sign of Anomaly10y.
 \item Plot a bar plot and use \texttt{sign} variable as the fill.\\
 \begin{knitrout}\footnotesize
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-
-{\centering \includegraphics[width=.75\linewidth]{figure/ex4} 
-
-}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 
 
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}
 
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in ifelse(clim\$Anomaly10y < 0, FALSE, TRUE): object 'clim' not found}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in ggplot(clim, aes(Year, Anomaly10y)): object 'clim' not found}}\end{kframe}
 \end{knitrout}
 
 \end{itemize}
@@ -1232,7 +1222,7 @@ Using the d2 dataset you created earlier, generate this plot below. Take a quick
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/densityone_} 
+{\centering \includegraphics[width=.75\linewidth]{figure/densityone_-1} 
 
 }
 
@@ -1253,7 +1243,7 @@ Using the d2 dataset you created earlier, generate this plot below. Take a quick
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/densityonefove_} 
+{\centering \includegraphics[width=.75\linewidth]{figure/densityonefove_-1} 
 
 }
 
@@ -1273,7 +1263,7 @@ Using the d2 dataset you created earlier, generate this plot below. Take a quick
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/densitytwo___} 
+{\centering \includegraphics[width=.75\linewidth]{figure/densitytwo___-1} 
 
 }
 
@@ -1301,7 +1291,7 @@ Using the d2 dataset you created earlier, generate this plot below. Take a quick
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/adding_stats_} 
+{\centering \includegraphics[width=.75\linewidth]{figure/adding_stats_-1} 
 
 }
 
@@ -1323,7 +1313,7 @@ Using the d2 dataset you created earlier, generate this plot below. Take a quick
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/adding_stats2_} 
+{\centering \includegraphics[width=.75\linewidth]{figure/adding_stats2_-1} 
 
 }
 
@@ -1368,7 +1358,7 @@ Themes are a great way to define custom plots.
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/facet_wrapbw_theme} 
+{\centering \includegraphics[width=.75\linewidth]{figure/facet_wrapbw_theme-1} 
 
 }
 
@@ -1402,7 +1392,7 @@ Themes are a great way to define custom plots.
 \frametitle{A themed plot}
 \begin{knitrout}\footnotesize
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=.75\linewidth]{figure/facet_wrap_theme_execc} 
+\includegraphics[width=.75\linewidth]{figure/facet_wrap_theme_execc-1} 
 
 \end{knitrout}
 \end{frame}
@@ -1446,11 +1436,11 @@ Themes are a great way to define custom plots.
 \hlcom{# install.packages('wesanderson')}
 \hlkwd{library}\hlstd{(}\hlstr{"wesanderson"}\hlstd{)}
 \hlcom{# display a palette}
-\hlkwd{display.wes.palette}\hlstd{(}\hlnum{4}\hlstd{,} \hlstr{"Royal1"}\hlstd{)}
+\hlkwd{wes_palette}\hlstd{(}\hlstr{"Royal2"}\hlstd{,} \hlnum{5}\hlstd{)}
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.75\linewidth]{figure/facet_wrap_theme_exec_royal} 
+{\centering \includegraphics[width=.75\linewidth]{figure/facet_wrap_theme_exec_royal-1} 
 
 }
 
