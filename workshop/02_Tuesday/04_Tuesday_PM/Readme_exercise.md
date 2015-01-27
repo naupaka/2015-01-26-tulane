@@ -3,13 +3,7 @@
 ### Using an Rmd file, create a short analysis report using R of the gapminder dataset.
 
 1. Move into your R project working directory (the one you have been working with for git and github).
-2. Make a subfolder called `final_exercise` and move into it.
-3. Either copy or re-download () the `setupProject.sh` and put it inside this `final_exercise` folder.
-3. Run the `setupProject.sh` script from within this `final_exercise` folder.
-4. Fix your script from yesterday (that fixes the contents of the three incorrect files: China, Guinea, Niger) if necessary to work with the new directory structure we have set up and run it.
-5. Check to make sure it worked: `wc -l data/clean/*.txt | sort`
-6. Run the `combine.sh` script to combine all the country files into a single file.
-2. Take a look at the resulting file (which should be in the `output` folder, and pick three countries you are interested in.
+2. Take a look at the file that resulted from our scripts this morning (which should be in the `output` folder, and pick three countries you are interested in.
 3. Write an Rmd script to load the data file, select all the data for that country (hint, use the `subset()` function), and use `ggplot` make a three scatter plots (one for each country) that has year on the x-axis and GDP on the y axis. Make sure you load all the libraries you might need (`ggplot2`, `reshape2`, etc). Describe any trends you see for each country using markdown text.
 4. Commit your changes using git.  You can do this from the command line or in RStudio if you like.
 5. Calculate the mean, min, and max life expectancies for each continent (hint: you use `aggregate()` if you like). Describe what you see in the results using a markdown text.
